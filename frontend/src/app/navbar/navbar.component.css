@@ -1,0 +1,45 @@
+/* Reset some default styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the success message */
+p {
+    color: #4CAF50; /* Green color for success message */
+    font-weight: bold;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+/* Style for the list of navigation links */
+.nav__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style for each navigation link */
+.nav__link {
+    text-decoration: none;
+    color: #fff; /* White color for text */
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Hover effect for navigation links */
+.nav__link:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Optional: Center the navigation links */
+nav {
+    text-align: center;
+}

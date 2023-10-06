@@ -1,0 +1,16 @@
+ 
+<div>
+    <h2>My Music Collection</h2>
+   
+    
+   
+    <ul>
+
+      <li *ngFor="let song of songList">
+        <img src="https://th.bing.com/th/id/OIP.4LAJI5npWsddDHskRW8KJwAAAA?pid=ImgDet&rs=1">
+       {{song.title}} - {{ song.artist.join(', ') }} - {{song.musicDirector}} - {{ song.genre}}
+       
+      </li>
+    </ul>
+  </div>
+ 

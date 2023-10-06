@@ -1,0 +1,8 @@
+<p>liked-songs works!</p>
+<h2>Liked Songs</h2>
+<ul>
+<li *ngFor="let song of likedSongs">
+    {{ song.title }} - {{ song.artist }}
+<button (click)="likeSong(song)">Like</button>
+</li>
+</ul>

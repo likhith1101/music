@@ -1,0 +1,27 @@
+<p>admin works!</p>
+<div>
+    <h2>My Music Collection</h2>
+   
+    <div>
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="newSong.title" />
+     
+      <label>Artists:</label>
+      <input type="text" [(ngModel)]="newSong.artist[0]" />
+      <input type="text" [(ngModel)]="newSong.artist[1]" />
+      <!-- <label>Artist:</label>
+      <input type="text" [(ngModel)]="newSong.artist" /> -->
+      <label>Genre:</label>
+      <input type="text" [(ngModel)]="newSong.genre" />
+      <label>MusicDirector:</label>
+      <input type="text" [(ngModel)]="newSong.musicDirector" />
+      <button (click)="addSong()">Add Song</button>
+    </div>
+   
+    <ul>
+      <li *ngFor="let song of songList">
+       {{song.title}} - {{ song.artist.join(', ') }} - {{song.musicDirector}} - {{ song.genre}}
+        <button (click)="deleteSong(song.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
